@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo Na Tela Imports — Importação B2B de Alto Padrão</title>
+  <link rel="icon" type="image/jpeg" href="logo-png.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <img src="logo-png.jpg" alt="Na Tela Imports" />
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">
+      <img src="logo-png.jpg" alt="Grupo Na Tela Imports" />
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#como-trabalhamos">Como Trabalhamos</a></li>
+      <li><a href="#solucoes">Soluções</a></li>
+      <li><a href="#resultados">Resultados</a></li>
+      <li><a href="#contato" class="nav-cta"><span>Falar Agora</span><i class="fas fa-arrow-right"></i></a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="particles-canvas"></canvas>
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-glow glow-1"></div>
+  <div class="hero-glow glow-2"></div>
+
+  <div class="hero-inner">
+    <div class="hero-content" data-aos>
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        <span>Importação B2B Estratégica</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1>
+        Importação B2B com<br/>
+        <span class="hero-gradient">governança</span>,<br/>
+        previsibilidade e margem.
+      </h1>
+      <p class="hero-desc">O Grupo Na Tela Imports estrutura sua operação internacional ponta a ponta — com fornecedores homologados, qualidade na origem, logística estratégica e desembaraço aduaneiro com controle total.</p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn btn-hero-primary">
+          <span>Agendar Diagnóstico Executivo</span>
+          <div class="btn-shimmer"></div>
+        </a>
+        <a href="https://wa.me/5511956655623?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista%20em%20importação." target="_blank" class="btn btn-hero-ghost">
+          <i class="fab fa-whatsapp"></i>
+          <span>Falar com Especialista</span>
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><i class="fas fa-check-circle"></i><span>+320 projetos entregues</span></div>
+        <div class="trust-sep"></div>
+        <div class="trust-item"><i class="fas fa-check-circle"></i><span>+R$ 10M em cargas</span></div>
+        <div class="trust-sep"></div>
+        <div class="trust-item"><i class="fas fa-check-circle"></i><span>97,4% satisfação</span></div>
+      </div>
+    </div>
+    <div class="hero-right" data-aos data-aos-delay="200">
+      <div class="hero-dashboard">
+        <div class="dash-header">
+          <div class="dash-dots"><span></span><span></span><span></span></div>
+          <span class="dash-title">Painel Operacional</span>
+          <span class="dash-live"><span class="live-dot"></span>Live</span>
+        </div>
+        <div class="dash-metrics">
+          <div class="dash-metric">
+            <span class="dm-val" id="dm1">320</span>
+            <span class="dm-label">Projetos</span>
+            <span class="dm-trend up"><i class="fas fa-arrow-trend-up"></i> +12%</span>
+          </div>
+          <div class="dash-metric">
+            <span class="dm-val">97,4%</span>
+            <span class="dm-label">Satisfação</span>
+            <span class="dm-trend up"><i class="fas fa-arrow-trend-up"></i> Top</span>
+          </div>
+        </div>
+        <div class="dash-bar-section">
+          <div class="dbs-label"><span>Taxa de entrega no prazo</span><span>94%</span></div>
+          <div class="dbs-track"><div class="dbs-fill" style="width:0%" data-width="94%"></div></div>
+          <div class="dbs-label"><span>Conformidade documental</span><span>98%</span></div>
+          <div class="dbs-track"><div class="dbs-fill" style="width:0%" data-width="98%"></div></div>
+          <div class="dbs-label"><span>Homologação aprovada</span><span>91%</span></div>
+          <div class="dbs-track"><div class="dbs-fill" style="width:0%" data-width="91%"></div></div>
+        </div>
+        <div class="dash-tags">
+          <span class="dtag">Desembaraço</span>
+          <span class="dtag">Sourcing</span>
+          <span class="dtag">Compliance</span>
+          <span class="dtag active">Operacional</span>
+        </div>
+      </div>
+      <div class="hero-float-cards">
+        <div class="hfc hfc-1 float-anim">
+          <i class="fas fa-shield-halved"></i>
+          <div><strong>Compliance Total</strong><span>Gestão de risco</span></div>
+        </div>
+        <div class="hfc hfc-2 float-anim delay1">
+          <i class="fas fa-globe"></i>
+          <div><strong>Origem Global</strong><span>Fornecedores homologados</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>Importação B2B</span><span class="mdot">◆</span>
+    <span>Sourcing Premium</span><span class="mdot">◆</span>
+    <span>Desembaraço Aduaneiro</span><span class="mdot">◆</span>
+    <span>Qualidade na Origem</span><span class="mdot">◆</span>
+    <span>Logística Estratégica</span><span class="mdot">◆</span>
+    <span>Compliance Total</span><span class="mdot">◆</span>
+    <span>Importação B2B</span><span class="mdot">◆</span>
+    <span>Sourcing Premium</span><span class="mdot">◆</span>
+    <span>Desembaraço Aduaneiro</span><span class="mdot">◆</span>
+    <span>Qualidade na Origem</span><span class="mdot">◆</span>
+    <span>Logística Estratégica</span><span class="mdot">◆</span>
+    <span>Compliance Total</span><span class="mdot">◆</span>
+  </div>
+</div>
+
+<!-- SUB HERO -->
+<section id="sub-hero">
+  <div class="container">
+    <div class="subhero-inner">
+      <div class="subhero-quote" data-aos>
+        <span class="quote-mark">"</span>
+        <p>Você não precisa <em>tentar importar</em>.<br/>Você precisa de uma operação que funcione.</p>
+        <span class="quote-mark closing">"</span>
+      </div>
+      <p class="subhero-sub" data-aos data-aos-delay="100">Importação feita do jeito certo: processo, compliance e gestão de risco — do briefing à entrega.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUEM É -->
+<section id="sobre">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-tag">Para quem é</div>
+      <h2>Para empresas que importam com <span class="grad-text">padrão de operação</span></h2>
+      <p>Ideal para: distribuidores, atacadistas, indústria, redes varejistas e e-commerces B2B.</p>
+    </div>
+    <div class="feat-grid" data-aos data-aos-delay="100">
+      <div class="feat-card">
+        <div class="feat-num">01</div>
+        <div class="feat-icon"><i class="fas fa-coins"></i></div>
+        <h3>Previsibilidade de custo total</h3>
+        <p>Landed cost calculado com precisão. Sem surpresas no desembaraço ou na logística final.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-num">02</div>
+        <div class="feat-icon"><i class="fas fa-shield-halved"></i></div>
+        <h3>Redução de risco com fornecedor</h3>
+        <p>Fornecedor validado, qualidade inspecionada na origem — antes do embarque.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-num">03</div>
+        <div class="feat-icon"><i class="fas fa-timeline"></i></div>
+        <h3>Prazo e fluxo controlados</h3>
+        <p>Operação com etapas, responsáveis e acompanhamento do briefing à entrega.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-num">04</div>
+        <div class="feat-icon"><i class="fas fa-rocket"></i></div>
+        <h3>Operação escalável</h3>
+        <p>Processo replicável para crescer com segurança, consistência e menor custo marginal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE ENTREGAMOS -->
+<section id="entregamos">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-tag">O que entregamos</div>
+      <h2>Mais do que consultoria: <span class="grad-text">controle de operação</span></h2>
+      <p>A Na Tela entra para organizar sua importação como uma área de projeto.</p>
+    </div>
+    <div class="deliver-grid" data-aos data-aos-delay="100">
+      <div class="deliver-item">
+        <div class="di-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+        <div class="di-text">
+          <h4>Planejamento e viabilidade</h4>
+          <p>Produto, requisitos e riscos mapeados antes de qualquer ação.</p>
+        </div>
+      </div>
+      <div class="deliver-item">
+        <div class="di-icon"><i class="fas fa-handshake"></i></div>
+        <div class="di-text">
+          <h4>Sourcing e homologação</h4>
+          <p>Fornecedores confiáveis, negociação e alinhamento técnico rigoroso.</p>
+        </div>
+      </div>
+      <div class="deliver-item">
+        <div class="di-icon"><i class="fas fa-vial-circle-check"></i></div>
+        <div class="di-text">
+          <h4>Inspeção na origem</h4>
+          <p>Controle de qualidade antes do embarque — sem surpresas na chegada.</p>
+        </div>
+      </div>
+      <div class="deliver-item">
+        <div class="di-icon"><i class="fas fa-ship"></i></div>
+        <div class="di-text">
+          <h4>Logística internacional</h4>
+          <p>Estratégia para custo e lead time com acompanhamento em tempo real.</p>
+        </div>
+      </div>
+      <div class="deliver-item">
+        <div class="di-icon"><i class="fas fa-file-shield"></i></div>
+        <div class="di-text">
+          <h4>Desembaraço aduaneiro</h4>
+          <p>Documentação e fluxo sem travas — processo guiado e checklist validado.</p>
+        </div>
+      </div>
+      <div class="deliver-item">
+        <div class="di-icon"><i class="fas fa-warehouse"></i></div>
+        <div class="di-text">
+          <h4>Armazenagem</h4>
+          <p>Quando necessário, com praticidade, segurança e continuidade operacional.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cta-center" data-aos data-aos-delay="200">
+      <a href="#contato" class="btn btn-red-outline">
+        <span>Quero mapear meu cenário</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- COMO TRABALHAMOS -->
+<section id="como-trabalhamos">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-tag light">Metodologia</div>
+      <h2 class="light-h2">Método Na Tela — <span class="grad-text">etapas claras e rastreáveis</span></h2>
+    </div>
+    <div class="process-timeline">
+      <div class="pt-item" data-aos data-aos-delay="0">
+        <div class="pt-left">
+          <div class="pt-num">01</div>
+          <div class="pt-line"></div>
+        </div>
+        <div class="pt-card">
+          <div class="pt-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Diagnóstico & Estratégia</h3>
+          <p>Definimos objetivo (margem, prazo, volume), mapeamos riscos e desenhamos o plano de execução completo.</p>
+          <div class="pt-tags"><span>Margem</span><span>Risco</span><span>Plano</span></div>
+        </div>
+      </div>
+      <div class="pt-item" data-aos data-aos-delay="80">
+        <div class="pt-left">
+          <div class="pt-num">02</div>
+          <div class="pt-line"></div>
+        </div>
+        <div class="pt-card">
+          <div class="pt-icon"><i class="fas fa-users-gear"></i></div>
+          <h3>Homologação de Fornecedores</h3>
+          <p>Validamos fornecedor, alinhamos especificações técnicas e conduzimos amostras com critério.</p>
+          <div class="pt-tags"><span>Validação</span><span>Amostras</span><span>Spec</span></div>
+        </div>
+      </div>
+      <div class="pt-item" data-aos data-aos-delay="160">
+        <div class="pt-left">
+          <div class="pt-num">03</div>
+          <div class="pt-line"></div>
+        </div>
+        <div class="pt-card">
+          <div class="pt-icon"><i class="fas fa-microscope"></i></div>
+          <h3>Qualidade na Origem</h3>
+          <p>Inspeção e validação antes do embarque para eliminar retrabalho e prejuízo na chegada.</p>
+          <div class="pt-tags"><span>Inspeção</span><span>QC</span><span>Conformidade</span></div>
+        </div>
+      </div>
+      <div class="pt-item" data-aos data-aos-delay="240">
+        <div class="pt-left">
+          <div class="pt-num">04</div>
+          <div class="pt-line"></div>
+        </div>
+        <div class="pt-card">
+          <div class="pt-icon"><i class="fas fa-route"></i></div>
+          <h3>Logística & Execução</h3>
+          <p>Organização do embarque e acompanhamento por etapa, com visão de status e próximos passos.</p>
+          <div class="pt-tags"><span>Embarque</span><span>Lead Time</span><span>Track</span></div>
+        </div>
+      </div>
+      <div class="pt-item" data-aos data-aos-delay="320">
+        <div class="pt-left">
+          <div class="pt-num">05</div>
+        </div>
+        <div class="pt-card">
+          <div class="pt-icon"><i class="fas fa-flag-checkered"></i></div>
+          <h3>Desembaraço & Entrega</h3>
+          <p>Condução do processo completo para evitar gargalos e garantir chegada segura e no prazo.</p>
+          <div class="pt-tags"><span>Docs</span><span>Alfândega</span><span>Entrega</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÕES -->
+<section id="solucoes">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-tag">Portfólio</div>
+      <h2>Soluções <span class="grad-text">Na Tela Imports</span></h2>
+      <p>Escolha o nível de suporte que sua operação precisa.</p>
+    </div>
+    <div class="sol-grid" data-aos data-aos-delay="100">
+      <div class="sol-card featured">
+        <div class="sol-badge">MAIS COMPLETO</div>
+        <div class="sol-icon-wrap"><i class="fas fa-crown"></i></div>
+        <h3>Consultoria Executive</h3>
+        <p>Acompanhamento completo do zero à entrega. Para empresas que querem resultado sem gaps operacionais.</p>
+        <ul class="sol-list">
+          <li><i class="fas fa-check"></i> Diagnóstico & Planejamento</li>
+          <li><i class="fas fa-check"></i> Sourcing e Homologação</li>
+          <li><i class="fas fa-check"></i> Qualidade na Origem</li>
+          <li><i class="fas fa-check"></i> Logística & Desembaraço</li>
+        </ul>
+        <a href="#contato" class="sol-btn sol-btn-white">Quero este <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon-wrap"><i class="fas fa-search-dollar"></i></div>
+        <h3>Sourcing & Homologação Premium</h3>
+        <p>Para quem quer melhorar fornecedor, negociar melhor e reduzir risco de origem com critério.</p>
+        <a href="#contato" class="sol-btn">Saiba mais <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon-wrap"><i class="fas fa-vial-circle-check"></i></div>
+        <h3>Qualidade na Origem</h3>
+        <p>Inspeção e conformidade rigorosa. Para empresas que não aceitam surpresa na chegada.</p>
+        <a href="#contato" class="sol-btn">Saiba mais <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon-wrap"><i class="fas fa-route"></i></div>
+        <h3>Logística Estratégica</h3>
+        <p>Otimização de custo e lead time com visão operacional completa e gestão de embarque.</p>
+        <a href="#contato" class="sol-btn">Saiba mais <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon-wrap"><i class="fas fa-file-invoice"></i></div>
+        <h3>Desembaraço Sem Complicação</h3>
+        <p>Fluxo mais rápido, seguro e organizado documentalmente. Sem gargalos.</p>
+        <a href="#contato" class="sol-btn">Saiba mais <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon-wrap"><i class="fas fa-warehouse"></i></div>
+        <h3>Armazenagem & Apoio Operacional</h3>
+        <p>Para operações que precisam de estrutura, continuidade e suporte logístico dedicado.</p>
+        <a href="#contato" class="sol-btn">Saiba mais <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<section id="resultados">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-tag light">Prova Social</div>
+      <h2 class="light-h2">Números que <span class="grad-text">sustentam a operação</span></h2>
+    </div>
+    <div class="metrics-row">
+      <div class="metric-block" data-aos data-aos-delay="0">
+        <div class="mb-num"><span class="count-up" data-target="320">0</span><span class="mb-plus">+</span></div>
+        <div class="mb-label">Projetos de importação entregues</div>
+        <div class="mb-bar"><div class="mb-fill" data-width="80%"></div></div>
+      </div>
+      <div class="metric-sep"></div>
+      <div class="metric-block" data-aos data-aos-delay="100">
+        <div class="mb-num"><span>R$ 10M</span><span class="mb-plus">+</span></div>
+        <div class="mb-label">Em cargas movimentadas</div>
+        <div class="mb-bar"><div class="mb-fill" data-width="92%"></div></div>
+      </div>
+      <div class="metric-sep"></div>
+      <div class="metric-block" data-aos data-aos-delay="200">
+        <div class="mb-num"><span>97,4</span><span class="mb-plus">%</span></div>
+        <div class="mb-label">Satisfação dos clientes</div>
+        <div class="mb-bar"><div class="mb-fill" data-width="97%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJEÇÕES -->
+<section id="objecoes">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-tag">Por que nos escolher</div>
+      <h2>O que gera <span class="grad-text">prejuízo na importação</span> — e como evitamos</h2>
+    </div>
+    <div class="obj-table" data-aos data-aos-delay="100">
+      <div class="obj-thead">
+        <div class="obj-th problem-col"><i class="fas fa-xmark"></i> Problema comum</div>
+        <div class="obj-th solution-col"><i class="fas fa-check"></i> Nossa solução</div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-cell problem-col"><span>Fornecedor sem validação</span></div>
+        <div class="obj-cell solution-col"><span>Homologação e alinhamento técnico completo</span></div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-cell problem-col"><span>Qualidade inconsistente</span></div>
+        <div class="obj-cell solution-col"><span>Inspeção rigorosa antes do embarque</span></div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-cell problem-col"><span>Documentação falha</span></div>
+        <div class="obj-cell solution-col"><span>Processo guiado com checklist validado</span></div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-cell problem-col"><span>Custo "surpresa"</span></div>
+        <div class="obj-cell solution-col"><span>Planejamento completo do landed cost</span></div>
+      </div>
+      <div class="obj-row last">
+        <div class="obj-cell problem-col"><span>Atrasos por falta de fluxo</span></div>
+        <div class="obj-cell solution-col"><span>Etapas definidas e acompanhamento contínuo</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="contact-left" data-aos>
+        <div class="section-tag light">Próximo passo</div>
+        <h2 class="light-h2">Agende um <span class="grad-text">Diagnóstico Executivo</span></h2>
+        <p class="contact-desc">Em uma conversa rápida, entendemos seu objetivo e mostramos o caminho mais seguro para importar com margem e previsibilidade.</p>
+        <div class="contact-info">
+          <a href="https://wa.me/5511956655623" target="_blank" class="ci-link">
+            <div class="ci-icon"><i class="fab fa-whatsapp"></i></div>
+            <div><strong>WhatsApp Direto</strong><span>+55 (11) 95665-5623</span></div>
+          </a>
+          <a href="https://www.instagram.com/natelaimports/" target="_blank" class="ci-link">
+            <div class="ci-icon insta"><i class="fab fa-instagram"></i></div>
+            <div><strong>Instagram</strong><span>@natelaimports</span></div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-right" data-aos data-aos-delay="150">
+        <form id="contact-form" class="prem-form">
+          <div class="pf-row">
+            <div class="pf-group">
+              <label>Nome <span class="req">*</span></label>
+              <input type="text" id="nome" required placeholder="Seu nome completo" />
+            </div>
+            <div class="pf-group">
+              <label>WhatsApp <span class="req">*</span></label>
+              <input type="tel" id="whatsapp" required placeholder="(11) 99999-9999" />
+            </div>
+          </div>
+          <div class="pf-row">
+            <div class="pf-group">
+              <label>E-mail</label>
+              <input type="email" id="email" placeholder="seu@email.com" />
+            </div>
+            <div class="pf-group">
+              <label>CNPJ</label>
+              <input type="text" id="cnpj" placeholder="00.000.000/0001-00" />
+            </div>
+          </div>
+          <div class="pf-group pf-full">
+            <label>Detalhe sua operação <span class="req">*</span></label>
+            <textarea id="mensagem" required rows="4" placeholder="Produto | país de origem | volume estimado | prazo ideal | objetivo (margem, recorrência, escala)"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <i class="fab fa-whatsapp"></i>
+            <span>Agendar Diagnóstico Executivo</span>
+            <div class="btn-shimmer"></div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="container footer-top-inner">
+      <img src="logo-png.jpg" alt="Na Tela Imports" class="footer-logo" />
+      <p class="footer-tagline">Importação B2B com governança, previsibilidade e margem.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/natelaimports/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/5511956655623" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© 2025 Na Tela Imports. Todos os direitos reservados.</span>
+      <div class="footer-nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/5511956655623?text=Olá!%20Quero%20saber%20mais%20sobre%20importação." target="_blank" class="wa-float" id="wa-float" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="wa-tooltip">Falar agora</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
